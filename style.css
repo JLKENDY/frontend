@@ -4,6 +4,7 @@ body{
 h1{
     color: #025157;
     text-align: center;
+    font-size: 30px;
 }
 p{
     color: #8b8b8bcc;
@@ -45,13 +46,11 @@ li {
     width: 15%;
   }
   .navbar {
-    width: 60%;
     text-align: center;
     color: #025157;
     font-weight: 500;
   }
   .actions {
-    width: 15%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -63,18 +62,13 @@ li {
     font-family: sans-serif;
   }
   .main {
-    margin-top: 285px;
+    margin-top: 130px;
     text-align: center;
   }
   .menu-item {
     display: inline;
     margin-right: 25px;
     margin-left: 25px;
-  }
-  .actions {
-    width: 15%;
-    text-align: right;
-    font-size: 14px;
   }
   .actions > * {
     margin-right: 10px;
@@ -182,4 +176,54 @@ li {
 .features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+@media (max-width: 575px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .banner > img {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .publish > form {
+    flex-direction: column;
+  }
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .publish > form > div > input {
+    width: 65%;
+  }
+}
+@media (max-width: 575px) {
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .explanatory-video > video {
+    width: 100%;
+  }
+  .publish {
+    margin-top: 10px;
+  }
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 575px) {
+  /** Estilos de portada principal y sección de publicidad */
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feature-image {
+    display: none;
+  }
 }
